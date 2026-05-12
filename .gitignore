@@ -1,0 +1,12 @@
+build
+!.vscode/*
+generated
+CMakeFiles
+pico-sdk
+cmake_install.cmake
+CMakeCache.txt
+compile_commands.json
+pico_flash_region.ld
+pico_sdk_import.cmake
+CS122A-Custom.*
+!CS122A-Custom.c44
