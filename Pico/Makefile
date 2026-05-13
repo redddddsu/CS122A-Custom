@@ -217,6 +217,438 @@ CS122A-Custom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/CS122A-Custom.c.s
 .PHONY : CS122A-Custom.c.s
 
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.s
+
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.obj
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.obj
 
@@ -553,6 +985,30 @@ C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.s
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.s
 
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.s
+
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.obj
 
@@ -576,6 +1032,30 @@ C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.s: C_/Users
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.s
 
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.obj
@@ -800,6 +1280,30 @@ C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.s: 
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.obj
@@ -1040,6 +1544,30 @@ C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.obj
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.obj
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.obj
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.obj
@@ -1353,6 +1881,78 @@ C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s
 
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.obj
 
@@ -1377,6 +1977,30 @@ C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.s
 
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1394,6 +2018,60 @@ help:
 	@echo ... CS122A-Custom.obj
 	@echo ... CS122A-Custom.i
 	@echo ... CS122A-Custom.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.s
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.s
@@ -1436,9 +2114,15 @@ help:
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.s
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.s
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.s
@@ -1467,6 +2151,9 @@ help:
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.s
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.s
@@ -1497,6 +2184,9 @@ help:
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.s
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.s
@@ -1536,9 +2226,21 @@ help:
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.s
 .PHONY : help
 
 
