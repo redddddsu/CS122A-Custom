@@ -35,7 +35,10 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(CS122A-Custom CS122A-Custom.c )
+add_executable(
+    src/CS122A-Custom CS122A-Custom.c 
+    src/maze.c
+    )
 
 pico_set_program_name(CS122A-Custom "CS122A-Custom")
 pico_set_program_version(CS122A-Custom "0.1")
