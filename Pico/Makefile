@@ -193,30 +193,6 @@ pico_status_led_ws2812_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\pico_status_led\CMakeFiles\pico_status_led_ws2812_pio_h.dir\build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 .PHONY : pico_status_led_ws2812_pio_h/fast
 
-CS122A-Custom.obj: CS122A-Custom.c.obj
-.PHONY : CS122A-Custom.obj
-
-# target to build an object file
-CS122A-Custom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/CS122A-Custom.c.obj
-.PHONY : CS122A-Custom.c.obj
-
-CS122A-Custom.i: CS122A-Custom.c.i
-.PHONY : CS122A-Custom.i
-
-# target to preprocess a source file
-CS122A-Custom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/CS122A-Custom.c.i
-.PHONY : CS122A-Custom.c.i
-
-CS122A-Custom.s: CS122A-Custom.c.s
-.PHONY : CS122A-Custom.s
-
-# target to generate assembly for a file
-CS122A-Custom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/CS122A-Custom.c.s
-.PHONY : CS122A-Custom.c.s
-
 C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.obj
 
@@ -1113,6 +1089,30 @@ C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.s
 
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.obj
+
+# target to build an object file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.obj
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.obj
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.i: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.i
+
+# target to preprocess a source file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.i
+
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.s: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.s
+
+# target to generate assembly for a file
+C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.s
+
 C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.obj: C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.obj
 
@@ -2001,6 +2001,54 @@ C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.s
 
+src/CS122A-Custom.obj: src/CS122A-Custom.c.obj
+.PHONY : src/CS122A-Custom.obj
+
+# target to build an object file
+src/CS122A-Custom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/src/CS122A-Custom.c.obj
+.PHONY : src/CS122A-Custom.c.obj
+
+src/CS122A-Custom.i: src/CS122A-Custom.c.i
+.PHONY : src/CS122A-Custom.i
+
+# target to preprocess a source file
+src/CS122A-Custom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/src/CS122A-Custom.c.i
+.PHONY : src/CS122A-Custom.c.i
+
+src/CS122A-Custom.s: src/CS122A-Custom.c.s
+.PHONY : src/CS122A-Custom.s
+
+# target to generate assembly for a file
+src/CS122A-Custom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/src/CS122A-Custom.c.s
+.PHONY : src/CS122A-Custom.c.s
+
+src/maze.obj: src/maze.c.obj
+.PHONY : src/maze.obj
+
+# target to build an object file
+src/maze.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/src/maze.c.obj
+.PHONY : src/maze.c.obj
+
+src/maze.i: src/maze.c.i
+.PHONY : src/maze.i
+
+# target to preprocess a source file
+src/maze.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/src/maze.c.i
+.PHONY : src/maze.c.i
+
+src/maze.s: src/maze.c.s
+.PHONY : src/maze.s
+
+# target to generate assembly for a file
+src/maze.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS122A-Custom.dir\build.make CMakeFiles/CS122A-Custom.dir/src/maze.c.s
+.PHONY : src/maze.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -2015,9 +2063,6 @@ help:
 	@echo ... CS122A-Custom
 	@echo ... bs2_default
 	@echo ... bs2_default_library
-	@echo ... CS122A-Custom.obj
-	@echo ... CS122A-Custom.i
-	@echo ... CS122A-Custom.s
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.s
@@ -2130,6 +2175,9 @@ help:
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.s
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.obj
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.i
+	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.s
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.s
@@ -2241,6 +2289,12 @@ help:
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.obj
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.i
 	@echo ... C_/Users/red93/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.s
+	@echo ... src/CS122A-Custom.obj
+	@echo ... src/CS122A-Custom.i
+	@echo ... src/CS122A-Custom.s
+	@echo ... src/maze.obj
+	@echo ... src/maze.i
+	@echo ... src/maze.s
 .PHONY : help
 
 

@@ -25,9 +25,11 @@ void initMaze() {
 */
 
 void randomize(int *arr) {  
-    for (int i = 3; i <= 0; i--) {
+    for (int i = 3; i >= 0; i--) {
         int random = rand() % (i + 1);
-        swap(arr[i], arr[random]);
+        int temp = arr[i];
+        arr[i] = arr[random];
+        arr[random] = temp;
     }
 }
 
@@ -66,18 +68,18 @@ void generateMaze(int x, int y) {
         switch (dir) {
             case 0:
                 next_x = x;
-                next_y = -1;
+                next_y = y-1;
                 break;
             case 1:
-                next_x = 1;
+                next_x = x + 1;
                 next_y = y;
                 break;
             case 2:
                 next_x = x;
-                next_y = 1;
+                next_y = y + 1;
                 break;
             case 3:
-                next_x = -1;
+                next_x = x-1;
                 next_y = y;
                 break;
         }
@@ -85,7 +87,7 @@ void generateMaze(int x, int y) {
         if (next_x < 0 || next_y < 0 || next_x >= maxX || next_y >= maxY)
             continue;
 
-        if (maze[next_y][next_y].visited)
+        if (maze[next_y][next_x].visited)
             continue;
 
         carve(x, y, next_x, next_y);
@@ -94,4 +96,20 @@ void generateMaze(int x, int y) {
 
     }
 
+}
+
+void transmit_maze() {
+    gpio_put(13, 0);
+    for (int y = 0; y < maxY; y++) {
+        for (int x = 0; x < maxX; x++) {
+            uint8_t tx;
+            tx |= maze[y][x].top;
+            tx |= maze[y][x].right << 1;
+            tx |= maze[y][x].bottom << 2;
+            tx |= maze[y][x].left << 3;
+
+            spi_write_blocking(spi1, &tx, 1);
+        }
+    }
+    gpio_put(13, 1);
 }
