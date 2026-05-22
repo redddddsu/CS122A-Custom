@@ -22,5 +22,7 @@ void initMaze();
 void randomize(int *arr);
 void carve(int x, int y, int next_x, int next_y);
 void generateMaze(int x, int y);
+void create_border();
+void transmit_maze();
 
 #endif

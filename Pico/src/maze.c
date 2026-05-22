@@ -1,7 +1,7 @@
 #include "../header/maze.hpp"
 
-#define maxX 20
-#define maxY 20
+#define maxX 30
+#define maxY 17
 
 Cell maze[maxY][maxX];
 
@@ -98,16 +98,28 @@ void generateMaze(int x, int y) {
 
 }
 
+void create_border() {
+    for (int x = 0; x < maxX; x++) {
+        maze[0][x].top = 1;            
+        maze[maxY-1][x].bottom = 1;    
+    }
+
+    for (int y = 0; y < maxY; y++) {
+        maze[y][0].left = 1;           
+        maze[y][maxX-1].right = 1;     
+    }
+}
+
 void transmit_maze() {
     gpio_put(13, 0);
     for (int y = 0; y < maxY; y++) {
         for (int x = 0; x < maxX; x++) {
-            uint8_t tx;
+            uint8_t tx = 0;
             tx |= maze[y][x].top;
             tx |= maze[y][x].right << 1;
             tx |= maze[y][x].bottom << 2;
             tx |= maze[y][x].left << 3;
-
+            tx &= 0x0F;
             spi_write_blocking(spi1, &tx, 1);
         }
     }
