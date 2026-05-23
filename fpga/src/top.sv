@@ -67,8 +67,7 @@ logic[8:0]  waddr;
 logic[7:0] wdata;
 logic we;
 
-logic[7:0] maze_cell;
-logic[7:0] maze[0:511];
+logic[3:0] maze[0:511];
 
 
 logic[7:0] shift_reg;
