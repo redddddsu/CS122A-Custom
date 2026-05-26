@@ -1,5 +1,3 @@
-`include "src/sprite_buf_EX2.sv"
-
 module top
 (
     input  CLK, //FPGA's clocck
@@ -58,68 +56,69 @@ parameter H_TOTAL = 525;
 parameter V_TOTAL = 285;
 
 parameter CELL_SIZE = 16;
-parameter MAX_X = 30;
+parameter MAX_X = 15;
+parameter MAX_Y = 8;
+
+localparam FRAME_SIZE = MAX_X * MAX_Y;
 
 logic[10:0] horizontal;
 logic[10:0] vertical;
 
 logic[8:0]  waddr;
 logic[7:0] wdata;
-logic we;
 
-logic[3:0] maze[0:511];
+logic [3:0] maze[0:FRAME_SIZE-1];
 
 
 logic[7:0] shift_reg;
 logic[2:0] bit_counter;
 always_ff @(posedge sclk) begin
-    we <= 0;
-    if (!cs) begin
-        shift_reg <= {shift_reg[6:0], mosi};
-        if (bit_counter == 7) begin
-            wdata <= {shift_reg[6:0], mosi};
-            waddr <= waddr + 1;
-            we <= 1;
-            bit_counter <= 0;
-        end
-        else begin
-            bit_counter <= bit_counter + 1;
-        end
-    end
-    else begin
+    if (cs) begin
         bit_counter <= 0;
         shift_reg <= 0;
         waddr <= 0;
     end
-end
+    else begin
+        shift_reg <= {shift_reg[6:0], mosi};
+        if (bit_counter == 7 && waddr < FRAME_SIZE) begin
+            maze[waddr] <= {shift_reg[2:0], mosi};
 
-always_ff @(posedge pclk) begin
-    if (we)
-        maze[waddr] <= wdata;
+            waddr <= waddr + 1;
+            bit_counter <= 0;
+           
+        end
+        else begin
+            bit_counter <= bit_counter + 1;
+            if (waddr >= FRAME_SIZE) 
+                waddr <= 0;
+        end
+    end
 end
 
 logic [5:0] cx, cy;
+logic inside;
+logic[8:0] index;
+logic[3:0] cell;
 
 always_comb begin
-    if (horizontal >= H_ACTIVE)
-        cx = MAX_X - 1;
-    else
+    inside = (horizontal < MAX_X * CELL_SIZE) && (vertical   < MAX_Y * CELL_SIZE);
+    cell = 4'b0000;
+    cx = 0;
+    cy = 0;
+    index = 0;
+    if (inside) begin
         cx = horizontal / CELL_SIZE;
+        cy = vertical   / CELL_SIZE;
 
-    if (vertical >= V_ACTIVE)
-        cy = MAX_Y - 1;
-    else
-        cy = vertical / CELL_SIZE;
-
-    index = cy * MAX_X + cx;
-    cell = maze[index];
+        index = cy * MAX_X + cx;
+        cell  = maze[index];
+    end
 end
 
 logic[5:0] x;
 logic[5:0] y;
 
-logic[8:0] index;
-logic[7:0] cell;
+
 
 always_comb begin
     x = horizontal % CELL_SIZE;
@@ -164,14 +163,16 @@ logic wall;
 
 always_comb begin
     wall = 0;
-    if (top && y == 0)
-        wall = 1;
-    if (bottom && y == CELL_SIZE-1)
-        wall = 1;
-    if (left && x == 0)
-        wall = 1;
-    if (right && x == CELL_SIZE-1)
-        wall = 1;
+    if (inside) begin
+        if (top && y == 0)
+            wall = 1;
+        if (bottom && y == CELL_SIZE-1)
+            wall = 1;
+        if (left && x == 0)
+            wall = 1;
+        if (right && x == CELL_SIZE-1)
+            wall = 1;
+    end
 end
 
 always_ff @(posedge pclk) begin
@@ -180,7 +181,7 @@ always_ff @(posedge pclk) begin
         LCD_G <= 6'h3F;
         LCD_B <= 5'h1F;
     end else begin
-        LCD_R <= 255;
+        LCD_R <= 5'h1F;
         LCD_G <= 0;
         LCD_B <= 0;
     end

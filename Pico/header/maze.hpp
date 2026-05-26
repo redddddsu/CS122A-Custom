@@ -6,6 +6,7 @@
 #include <stdint.h>
 #include "hardware/spi.h"
 #include "pico/stdlib.h"
+#include <time.h>
 
 
 

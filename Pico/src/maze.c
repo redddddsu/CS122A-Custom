@@ -1,7 +1,7 @@
 #include "../header/maze.hpp"
 
-#define maxX 30
-#define maxY 17
+#define maxX 15
+#define maxY 8
 
 Cell maze[maxY][maxX];
 
@@ -55,15 +55,14 @@ void carve(int x, int y, int next_x, int next_y) {
 void generateMaze(int x, int y) {
     maze[y][x].visited = true;
 
-
     int directions[] = {0, 1, 2, 3};
     randomize(directions);
 
     for (int i = 0; i < 4; i++) {
         int dir = directions[i];
 
-        int next_x = 0;
-        int next_y = 0;
+        int next_x = x;
+        int next_y = y;
 
         switch (dir) {
             case 0:
