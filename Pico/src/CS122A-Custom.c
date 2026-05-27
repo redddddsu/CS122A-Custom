@@ -56,10 +56,41 @@ bool r_button() {
             initMaze();
             generateMaze(0, 0);
             create_border();
-            transmit_maze();
+            transmit_maze(1);
             break;
     }
 }
+
+// enum start_button {s_start, s_off, s_release, s_on} sbuttonStates;
+
+// bool s_button() {
+//     switch (sbuttonStates) {
+//         case s_start:
+//             sbuttonStates = s_off;
+//             break;
+//         case s_off:
+//             if (!gpio_get(15)) {
+//                 sbuttonStates = s_release;
+//             }   
+//             break;
+//         case s_release:
+//             if (gpio_get(15))
+//                 sbuttonStates = s_on;
+//             break;
+//         case s_on:
+//             sbuttonStates = s_off;
+//             break;
+//     }
+
+//     switch (sbuttonStates) {
+//         case s_on:
+//             initMaze();
+//             generateMaze(0, 0);
+//             create_border();
+//             transmit_maze(1);
+//             break;
+//     }
+// }
 
 int main()
 {
@@ -85,14 +116,18 @@ int main()
 
     mpu6050_reset();
 
-    //buttons
+    //randomize maze bt
     gpio_init(15);
     gpio_set_dir(15, 0);
     gpio_pull_up(15);
 
+    //start | end bt
+    gpio_init(14);
+    gpio_set_dir(14, 0);
+    gpio_pull_up(14);
+
     int16_t acceleration[3];
     add_repeating_timer_ms(-10, r_button, NULL, &timer);
-
 
 
     while (true) {

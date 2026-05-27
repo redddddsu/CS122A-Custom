@@ -109,7 +109,7 @@ void create_border() {
     }
 }
 
-void transmit_maze() {
+void transmit_maze(int bt) {
     gpio_put(13, 0);
     for (int y = 0; y < maxY; y++) {
         for (int x = 0; x < maxX; x++) {
@@ -118,7 +118,7 @@ void transmit_maze() {
             tx |= maze[y][x].right << 1;
             tx |= maze[y][x].bottom << 2;
             tx |= maze[y][x].left << 3;
-            tx &= 0x0F;
+            tx |= bt << 4;
             spi_write_blocking(spi1, &tx, 1);
         }
     }

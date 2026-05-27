@@ -72,6 +72,8 @@ logic [3:0] maze[0:FRAME_SIZE-1];
 
 logic[7:0] shift_reg;
 logic[2:0] bit_counter;
+
+logic switch_screen;
 always_ff @(posedge sclk) begin
     if (cs) begin
         bit_counter <= 0;
@@ -82,7 +84,7 @@ always_ff @(posedge sclk) begin
         shift_reg <= {shift_reg[6:0], mosi};
         if (bit_counter == 7 && waddr < FRAME_SIZE) begin
             maze[waddr] <= {shift_reg[2:0], mosi};
-
+            switch_screen = shift_reg[3];
             waddr <= waddr + 1;
             bit_counter <= 0;
            
@@ -179,33 +181,40 @@ localparam SCREEN_START = 0;
 localparam SCREEN_GAME = 1;
 
 always_ff @(posedge pclk) begin
+    if (switch_screen == 0) 
+        screen <= SCREEN_START;
+    else
+        screen <= SCREEN_GAME;
+    
+end
+
+always_ff @(posedge pclk) begin
     if (screen == SCREEN_START) begin
-
-
+        if (title_pixel) begin
+            LCD_R <= 0;
+            LCD_G <= 0;
+            LCD_B <= 0;
+        end
+        else begin
+            LCD_R <= 21;
+            LCD_G <= 0;
+            LCD_B <= 0;
+        end
+    end else if (screen == SCREEN_GAME) begin
+        if (wall) begin
+            LCD_R <= 0;
+            LCD_G <= 0;
+            LCD_B <= 0;
+        end else begin
+            LCD_R <= 21;
+            LCD_G <= 0;
+            LCD_B <= 0;
+        end
     end
 
 
 
-    if (title_pixel) begin
-        LCD_R <= 0;
-        LCD_G <= 0;
-        LCD_B <= 0;
-    end
-    else begin
-        LCD_R <= 21;
-        LCD_G <= 0;
-        LCD_B <= 0;
-    end
 
-    // if (wall) begin
-    //     LCD_R <= 0;
-    //     LCD_G <= 0;
-    //     LCD_B <= 0;
-    // end else begin
-    //     LCD_R <= 21;
-    //     LCD_G <= 0;
-    //     LCD_B <= 0;
-    // end
 
 end
 
