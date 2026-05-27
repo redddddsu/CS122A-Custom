@@ -9,4 +9,4 @@ compile_commands.json
 pico_flash_region.ld
 pico_sdk_import.cmake
 CS122A-Custom.*
-!CS122A-Custom.c44
+!CS122A-Custom.c

@@ -7,8 +7,8 @@ module top
     input logic cs,
     output logic miso,
 
-	output LCD_CLK,//LCD clock. 
-	output LCD_DEN,
+	output logic LCD_CLK,//LCD clock. 
+	output logic LCD_DEN,
 	output logic[4:0] LCD_R,
 	output logic[5:0] LCD_G,
 	output logic[4:0] LCD_B
@@ -39,10 +39,10 @@ module lcd
     output logic miso,
 
 
-    input  rst,
-    input  pclk, 
+    input logic rst,
+    input logic pclk, 
 
-    output LCD_DE,      // Display Enable
+    output logic LCD_DE,      // Display Enable
 
     output logic[4:0] LCD_B, // 5-bit blue color data
     output logic[5:0] LCD_G, // 6-bit green color data
@@ -101,7 +101,7 @@ logic[8:0] index;
 logic[3:0] cell;
 
 always_comb begin
-    inside = (horizontal < MAX_X * CELL_SIZE) && (vertical   < MAX_Y * CELL_SIZE);
+    inside = (horizontal < MAX_X * CELL_SIZE) && (vertical < MAX_Y * CELL_SIZE);
     cell = 4'b0000;
     cx = 0;
     cy = 0;
@@ -117,8 +117,6 @@ end
 
 logic[5:0] x;
 logic[5:0] y;
-
-
 
 always_comb begin
     x = horizontal % CELL_SIZE;
@@ -161,31 +159,105 @@ end
 
 logic wall;
 
-always_comb begin
-    wall = 0;
+always_ff @(posedge pclk) begin
+    wall <= 0;
     if (inside) begin
         if (top && y == 0)
-            wall = 1;
+            wall <= 1;
         if (bottom && y == CELL_SIZE-1)
-            wall = 1;
+            wall <= 1;
         if (left && x == 0)
-            wall = 1;
+            wall <= 1;
         if (right && x == CELL_SIZE-1)
-            wall = 1;
+            wall <= 1;
     end
 end
 
+logic screen;
+
+localparam SCREEN_START = 0;
+localparam SCREEN_GAME = 1;
+
 always_ff @(posedge pclk) begin
-    if (wall) begin
-        LCD_R <= 5'h1F;
-        LCD_G <= 6'h3F;
-        LCD_B <= 5'h1F;
-    end else begin
-        LCD_R <= 5'h1F;
+    if (screen == SCREEN_START) begin
+
+
+    end
+
+
+
+    if (title_pixel) begin
+        LCD_R <= 0;
+        LCD_G <= 0;
+        LCD_B <= 0;
+    end
+    else begin
+        LCD_R <= 21;
         LCD_G <= 0;
         LCD_B <= 0;
     end
 
+    // if (wall) begin
+    //     LCD_R <= 0;
+    //     LCD_G <= 0;
+    //     LCD_B <= 0;
+    // end else begin
+    //     LCD_R <= 21;
+    //     LCD_G <= 0;
+    //     LCD_B <= 0;
+    // end
+
 end
+
+logic title_pixel;
+
+always_comb begin
+    title_pixel = 0;
+
+    if (
+        ((horizontal >= 120 && horizontal < 128) && (vertical >= 80  && vertical < 160))
+        ||
+        ((horizontal >= 152 && horizontal < 160) && (vertical >= 80  && vertical < 160))
+        ||
+        ((horizontal >= 128 && horizontal < 136) && (vertical >= 88  && vertical < 96))
+        ||
+        ((horizontal >= 144 && horizontal < 152) && (vertical >= 88  && vertical < 96))
+        ||
+        ((horizontal >= 136 && horizontal < 144) && (vertical >= 96 && vertical < 104))
+    )
+        title_pixel = 1;
+    if (
+        ((horizontal >= 180 && horizontal < 188) && (vertical >= 80  && vertical < 160))
+        ||
+        ((horizontal >= 212 && horizontal < 220) && (vertical >= 80  && vertical < 160))
+        ||
+        ((horizontal >= 180 && horizontal < 220) && (vertical >= 80  && vertical < 88))
+        ||
+        ((horizontal >= 180 && horizontal < 220) && (vertical >= 116 && vertical < 124))
+    )
+        title_pixel = 1;
+    if (
+        ((horizontal >= 240 && horizontal < 280) && (vertical >= 80  && vertical < 88))
+        ||
+        ((horizontal >= 240 && horizontal < 280) && (vertical >= 152 && vertical < 160))
+        ||
+        ((horizontal - 240) + (vertical - 80) >= 64 && (horizontal - 240) + (vertical - 80) < 80 && horizontal >= 240 && horizontal < 280 && vertical >= 80 && vertical < 160)
+    )
+        title_pixel = 1;
+
+    if (
+        ((horizontal >= 300 && horizontal < 308) &&(vertical >= 80  && vertical < 160))
+        ||
+        ((horizontal >= 300 && horizontal < 340) && (vertical >= 80  && vertical < 88))
+        ||
+        ((horizontal >= 300 && horizontal < 336) && (vertical >= 116 && vertical < 124))
+        ||
+        ((horizontal >= 300 && horizontal < 340) && (vertical >= 152 && vertical < 160))
+
+    )
+        title_pixel = 1;
+
+end
+
 
 endmodule
