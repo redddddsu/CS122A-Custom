@@ -21,6 +21,8 @@ typedef struct {
     bool begin;
     bool end;
 
+    bool current_position;
+
 } Cell;
 
 void initMaze();
@@ -29,5 +31,6 @@ void carve(int x, int y, int next_x, int next_y);
 void generateMaze(int x, int y);
 void create_border();
 void transmit_maze(int bt);
+void gameLogic(int16_t acceleration[]);
 
 #endif

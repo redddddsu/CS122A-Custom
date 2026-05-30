@@ -5,6 +5,9 @@
 
 Cell maze[maxY][maxX];
 
+int currX;
+int currY;
+
 void initMaze() {
     for (int y = 0; y < maxY; y++) {
         for (int x = 0; x < maxX; x++) {
@@ -13,8 +16,12 @@ void initMaze() {
             maze[y][x].right = 1;
             maze[y][x].left = 1;
             maze[y][x].bottom = 1;
+            maze[y][x].current_position = false;
         }
     }
+    currX = 0;
+    currY = 0;
+    maze[currY][currX].current_position = true;
 }
 
 /* 
@@ -119,8 +126,33 @@ void transmit_maze(int bt) {
             tx |= maze[y][x].bottom << 2;
             tx |= maze[y][x].left << 3;
             tx |= bt << 4;
+            tx |= maze[y][x].current_position << 5;
             spi_write_blocking(spi1, &tx, 1);
         }
     }
     gpio_put(13, 1);
+}
+
+void gameLogic(int16_t acceleration[]) {
+    if (acceleration[1] > 3000 && maze[currY][currX].right != 1 && currX + 1 < maxX) {
+        maze[currY][currX].current_position = false;
+        currX += 1;
+        maze[currY][currX].current_position = true;
+    }
+    else if (acceleration[1] < -3000 && maze[currY][currX].left != 1 && currX - 1 >= 0) {
+        maze[currY][currX].current_position = false;
+        currX -= 1;
+        maze[currY][currX].current_position = true;
+    }
+    else if (acceleration[0] < -4000 && maze[currY][currX].top != 1 && currY - 1 >= 0) {
+        maze[currY][currX].current_position = false;
+        currY -= 1;
+        maze[currY][currX].current_position = true;
+    }
+    else if (acceleration[0] > 4000 && maze[currY][currX].bottom != 1 && currY + 1 < maxY) {
+        maze[currY][currX].current_position = false;
+        currY += 1;
+        maze[currY][currX].current_position = true;
+    }
+    transmit_maze(1);
 }

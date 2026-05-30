@@ -129,10 +129,10 @@ int main()
     int16_t acceleration[3];
     add_repeating_timer_ms(-10, r_button, NULL, &timer);
 
-
     while (true) {
         mpu6050_read_raw(acceleration);
+        gameLogic(acceleration);
         printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
-        sleep_ms(1000);
+        sleep_ms(100);
     }
 }

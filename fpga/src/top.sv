@@ -67,7 +67,7 @@ logic[10:0] vertical;
 logic[8:0]  waddr;
 logic[7:0] wdata;
 
-logic [3:0] maze[0:FRAME_SIZE-1];
+logic [4:0] maze[0:FRAME_SIZE-1];
 
 
 logic[7:0] shift_reg;
@@ -83,7 +83,7 @@ always_ff @(posedge sclk) begin
     else begin
         shift_reg <= {shift_reg[6:0], mosi};
         if (bit_counter == 7 && waddr < FRAME_SIZE) begin
-            maze[waddr] <= {shift_reg[2:0], mosi};
+            maze[waddr] <= {shift_reg[4], {shift_reg[2:0], mosi}};
             switch_screen = shift_reg[3];
             waddr <= waddr + 1;
             bit_counter <= 0;
@@ -100,11 +100,11 @@ end
 logic [5:0] cx, cy;
 logic inside;
 logic[8:0] index;
-logic[3:0] cell;
+logic[4:0] cell;
 
 always_comb begin
     inside = (horizontal < MAX_X * CELL_SIZE) && (vertical < MAX_Y * CELL_SIZE);
-    cell = 4'b0000;
+    cell = 5'b0000;
     cx = 0;
     cy = 0;
     index = 0;
@@ -129,12 +129,14 @@ logic top;
 logic right;
 logic bottom;
 logic left;
+logic curr_pos;
 
 always_comb begin
     top = cell[0];
     right = cell[1];
     bottom = cell[2];
     left = cell[3];
+    curr_pos = cell[4];
 end
 
 always_ff @(posedge pclk) begin
@@ -160,9 +162,11 @@ always_ff @(posedge pclk) begin
 end
 
 logic wall;
+logic location;
 
 always_ff @(posedge pclk) begin
     wall <= 0;
+    location <= 0;
     if (inside) begin
         if (top && y == 0)
             wall <= 1;
@@ -172,6 +176,8 @@ always_ff @(posedge pclk) begin
             wall <= 1;
         if (right && x == CELL_SIZE-1)
             wall <= 1;
+        if (curr_pos)
+            location <= 1;
     end
 end
 
@@ -205,11 +211,17 @@ always_ff @(posedge pclk) begin
             LCD_R <= 0;
             LCD_G <= 0;
             LCD_B <= 0;
+        end else if (location) begin
+            LCD_R <= 0;
+            LCD_G <= 21;
+            LCD_B <= 0;
         end else begin
             LCD_R <= 21;
             LCD_G <= 0;
             LCD_B <= 0;
+        
         end
+
     end
 
 
