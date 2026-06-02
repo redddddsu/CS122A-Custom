@@ -31,6 +31,6 @@ void carve(int x, int y, int next_x, int next_y);
 void generateMaze(int x, int y);
 void create_border();
 void transmit_maze(int bt);
-void gameLogic(int16_t acceleration[]);
+void gameLogic(int16_t acceleration[], int gameState);
 
 #endif

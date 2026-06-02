@@ -32,6 +32,8 @@ long map(long x, long in_min, long in_max, long out_min, long out_max) {
 
 enum randomize_button {r_start, r_off, r_release, r_on} rbuttonStates;
 
+int gameState = 0;
+
 bool r_button() {
     switch (rbuttonStates) {
         case r_start:
@@ -56,48 +58,47 @@ bool r_button() {
             initMaze();
             generateMaze(0, 0);
             create_border();
-            transmit_maze(1);
+            gameState = 1;
+            transmit_maze(gameState);
             break;
     }
 }
 
-// enum start_button {s_start, s_off, s_release, s_on} sbuttonStates;
+enum start_button {s_start, s_off, s_release, s_on} sbuttonStates;
 
-// bool s_button() {
-//     switch (sbuttonStates) {
-//         case s_start:
-//             sbuttonStates = s_off;
-//             break;
-//         case s_off:
-//             if (!gpio_get(15)) {
-//                 sbuttonStates = s_release;
-//             }   
-//             break;
-//         case s_release:
-//             if (gpio_get(15))
-//                 sbuttonStates = s_on;
-//             break;
-//         case s_on:
-//             sbuttonStates = s_off;
-//             break;
-//     }
+bool s_button() {
+    switch (sbuttonStates) {
+        case s_start:
+            sbuttonStates = s_off;
+            break;
+        case s_off:
+            if (!gpio_get(14)) {
+                sbuttonStates = s_release;
+            }   
+            break;
+        case s_release:
+            if (gpio_get(14))
+                sbuttonStates = s_on;
+            break;
+        case s_on:
+            sbuttonStates = s_off;
+            break;
+    }
 
-//     switch (sbuttonStates) {
-//         case s_on:
-//             initMaze();
-//             generateMaze(0, 0);
-//             create_border();
-//             transmit_maze(1);
-//             break;
-//     }
-// }
+    switch (sbuttonStates) {
+        case s_on:
+            gameState = 0;
+            break;
+    }
+}
 
 int main()
 {
     srand(time(NULL));
 
     stdio_init_all();
-    struct repeating_timer timer;
+    struct repeating_timer random_timer;
+    struct repeating_timer start_timer;
     i2c_init(i2c0, 100 * 1000); // i2c_0
 
     gpio_set_function(20, GPIO_FUNC_I2C); // SDA
@@ -127,11 +128,12 @@ int main()
     gpio_pull_up(14);
 
     int16_t acceleration[3];
-    add_repeating_timer_ms(-10, r_button, NULL, &timer);
+    add_repeating_timer_ms(-10, r_button, NULL, &random_timer);
+    add_repeating_timer_ms(-10, s_button, NULL, &start_timer);
 
     while (true) {
         mpu6050_read_raw(acceleration);
-        gameLogic(acceleration);
+        gameLogic(acceleration, gameState);
         printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
         sleep_ms(100);
     }

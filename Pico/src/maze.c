@@ -133,7 +133,7 @@ void transmit_maze(int bt) {
     gpio_put(13, 1);
 }
 
-void gameLogic(int16_t acceleration[]) {
+void gameLogic(int16_t acceleration[], int gameState) {
     if (acceleration[1] > 3000 && maze[currY][currX].right != 1 && currX + 1 < maxX) {
         maze[currY][currX].current_position = false;
         currX += 1;
@@ -154,5 +154,5 @@ void gameLogic(int16_t acceleration[]) {
         currY += 1;
         maze[currY][currX].current_position = true;
     }
-    transmit_maze(1);
+    transmit_maze(gameState);
 }
