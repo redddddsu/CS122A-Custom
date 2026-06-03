@@ -17,11 +17,13 @@ void initMaze() {
             maze[y][x].left = 1;
             maze[y][x].bottom = 1;
             maze[y][x].current_position = false;
+            maze[y][x].end = false;
         }
     }
     currX = 0;
     currY = 0;
     maze[currY][currX].current_position = true;
+    maze[maxY - 1][maxX - 1].end = true;
 }
 
 /* 
@@ -125,8 +127,9 @@ void transmit_maze(int bt) {
             tx |= maze[y][x].right << 1;
             tx |= maze[y][x].bottom << 2;
             tx |= maze[y][x].left << 3;
-            tx |= bt << 4;
-            tx |= maze[y][x].current_position << 5;
+            tx |= maze[y][x].current_position << 4;
+            tx |= 0 << 5;
+            tx |= bt << 6;
             spi_write_blocking(spi1, &tx, 1);
         }
     }
@@ -153,6 +156,10 @@ void gameLogic(int16_t acceleration[], int gameState) {
         maze[currY][currX].current_position = false;
         currY += 1;
         maze[currY][currX].current_position = true;
+    }
+
+    if (maze[currY][currX].end) {
+        // gameState = 0;
     }
     transmit_maze(gameState);
 }

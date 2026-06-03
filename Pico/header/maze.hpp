@@ -18,11 +18,9 @@ typedef struct {
     int bottom;
     int left;
 
-    bool begin;
     bool end;
 
     bool current_position;
-
 } Cell;
 
 void initMaze();

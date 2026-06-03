@@ -73,6 +73,8 @@ logic [4:0] maze[0:FRAME_SIZE-1];
 logic[7:0] shift_reg;
 logic[2:0] bit_counter;
 
+logic [7:0] rx;
+
 logic switch_screen;
 always_ff @(posedge sclk) begin
     if (cs) begin
@@ -83,8 +85,9 @@ always_ff @(posedge sclk) begin
     else begin
         shift_reg <= {shift_reg[6:0], mosi};
         if (bit_counter == 7 && waddr < FRAME_SIZE) begin
-            maze[waddr] <= {shift_reg[4], {shift_reg[2:0], mosi}};
-            switch_screen = shift_reg[3];
+            rx = {shift_reg[6:0], mosi};
+            maze[waddr] <= rx[4:0]; 
+            switch_screen <= rx[6];
             waddr <= waddr + 1;
             bit_counter <= 0;
            
