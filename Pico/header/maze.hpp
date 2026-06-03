@@ -8,7 +8,7 @@
 #include "pico/stdlib.h"
 #include <time.h>
 
-
+extern int gameEnd;
 
 typedef struct {
     bool visited;
@@ -28,7 +28,7 @@ void randomize(int *arr);
 void carve(int x, int y, int next_x, int next_y);
 void generateMaze(int x, int y);
 void create_border();
-void transmit_maze(int bt);
-void gameLogic(int16_t acceleration[], int gameState);
+void transmit_maze(int bt, int end);
+void gameLogic(int16_t acceleration[], int gameState, int end);
 
 #endif

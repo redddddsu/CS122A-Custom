@@ -118,7 +118,7 @@ void create_border() {
     }
 }
 
-void transmit_maze(int bt) {
+void transmit_maze(int bt, int end) {
     gpio_put(13, 0);
     for (int y = 0; y < maxY; y++) {
         for (int x = 0; x < maxX; x++) {
@@ -128,15 +128,16 @@ void transmit_maze(int bt) {
             tx |= maze[y][x].bottom << 2;
             tx |= maze[y][x].left << 3;
             tx |= maze[y][x].current_position << 4;
-            tx |= 0 << 5;
+            tx |= maze[y][x].end << 5;
             tx |= bt << 6;
+            tx |= end << 7;
             spi_write_blocking(spi1, &tx, 1);
         }
     }
     gpio_put(13, 1);
 }
 
-void gameLogic(int16_t acceleration[], int gameState) {
+void gameLogic(int16_t acceleration[], int gameState, int end) {
     if (acceleration[1] > 3000 && maze[currY][currX].right != 1 && currX + 1 < maxX) {
         maze[currY][currX].current_position = false;
         currX += 1;
@@ -159,7 +160,10 @@ void gameLogic(int16_t acceleration[], int gameState) {
     }
 
     if (maze[currY][currX].end) {
-        // gameState = 0;
-    }
-    transmit_maze(gameState);
+        end = 1;
+        gameEnd = 1;
+        currX = 0;
+        currY = 0;
+    }   
+    transmit_maze(gameState, end);
 }

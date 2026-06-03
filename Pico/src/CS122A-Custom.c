@@ -33,6 +33,7 @@ long map(long x, long in_min, long in_max, long out_min, long out_max) {
 enum randomize_button {r_start, r_off, r_release, r_on} rbuttonStates;
 
 int gameState = 0;
+int gameEnd = 1;
 
 bool r_button() {
     switch (rbuttonStates) {
@@ -40,7 +41,7 @@ bool r_button() {
             rbuttonStates = r_off;
             break;
         case r_off:
-            if (!gpio_get(15)) {
+            if (!gpio_get(15) && !gameEnd) {
                 rbuttonStates = r_release;
             }   
             break;
@@ -59,7 +60,7 @@ bool r_button() {
             generateMaze(0, 0);
             create_border();
             gameState = 1;
-            transmit_maze(gameState);
+            transmit_maze(gameState, 0);
             break;
     }
 }
@@ -88,6 +89,8 @@ bool s_button() {
     switch (sbuttonStates) {
         case s_on:
             gameState = 0;
+            gameEnd = 0;
+            transmit_maze(gameState, gameEnd);
             break;
     }
 }
@@ -133,7 +136,8 @@ int main()
 
     while (true) {
         mpu6050_read_raw(acceleration);
-        gameLogic(acceleration, gameState);
+        if (!gameEnd)
+            gameLogic(acceleration, gameState, gameEnd);
         printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
         sleep_ms(100);
     }

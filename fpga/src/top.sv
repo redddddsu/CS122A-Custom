@@ -59,6 +59,10 @@ parameter CELL_SIZE = 16;
 parameter MAX_X = 15;
 parameter MAX_Y = 8;
 
+parameter OFFSET_X = 120;
+parameter OFFSET_Y = 72;
+
+
 localparam FRAME_SIZE = MAX_X * MAX_Y;
 
 logic[10:0] horizontal;
@@ -67,7 +71,7 @@ logic[10:0] vertical;
 logic[8:0]  waddr;
 logic[7:0] wdata;
 
-logic [4:0] maze[0:FRAME_SIZE-1];
+logic [5:0] maze[0:FRAME_SIZE-1];
 
 
 logic[7:0] shift_reg;
@@ -76,6 +80,7 @@ logic[2:0] bit_counter;
 logic [7:0] rx;
 
 logic switch_screen;
+logic gameEnd;
 always_ff @(posedge sclk) begin
     if (cs) begin
         bit_counter <= 0;
@@ -86,8 +91,9 @@ always_ff @(posedge sclk) begin
         shift_reg <= {shift_reg[6:0], mosi};
         if (bit_counter == 7 && waddr < FRAME_SIZE) begin
             rx = {shift_reg[6:0], mosi};
-            maze[waddr] <= rx[4:0]; 
+            maze[waddr] <= rx[5:0]; 
             switch_screen <= rx[6];
+            gameEnd <= rx[7];
             waddr <= waddr + 1;
             bit_counter <= 0;
            
@@ -103,17 +109,17 @@ end
 logic [5:0] cx, cy;
 logic inside;
 logic[8:0] index;
-logic[4:0] cell;
+logic[5:0] cell;
 
 always_comb begin
-    inside = (horizontal < MAX_X * CELL_SIZE) && (vertical < MAX_Y * CELL_SIZE);
-    cell = 5'b0000;
+    inside = (horizontal >= OFFSET_X) && (horizontal < OFFSET_X + MAX_X * CELL_SIZE) && (vertical >= OFFSET_Y) && (vertical < OFFSET_Y + MAX_Y * CELL_SIZE);
+    cell = 6'b0000;
     cx = 0;
     cy = 0;
     index = 0;
     if (inside) begin
-        cx = horizontal / CELL_SIZE;
-        cy = vertical   / CELL_SIZE;
+        cx = (horizontal - OFFSET_X) / CELL_SIZE;
+        cy = (vertical - OFFSET_Y) / CELL_SIZE;
 
         index = cy * MAX_X + cx;
         cell  = maze[index];
@@ -124,8 +130,8 @@ logic[5:0] x;
 logic[5:0] y;
 
 always_comb begin
-    x = horizontal % CELL_SIZE;
-    y = vertical % CELL_SIZE;
+    x = (horizontal - OFFSET_X) % CELL_SIZE;
+    y = (vertical - OFFSET_Y) % CELL_SIZE;
 end
 
 logic top;
@@ -140,6 +146,7 @@ always_comb begin
     bottom = cell[2];
     left = cell[3];
     curr_pos = cell[4];
+    end_pos = cell[5];
 end
 
 always_ff @(posedge pclk) begin
@@ -166,10 +173,12 @@ end
 
 logic wall;
 logic location;
+logic finish;
 
 always_ff @(posedge pclk) begin
     wall <= 0;
     location <= 0;
+    finish <= 0;
     if (inside) begin
         if (top && y == 0)
             wall <= 1;
@@ -181,30 +190,44 @@ always_ff @(posedge pclk) begin
             wall <= 1;
         if (curr_pos)
             location <= 1;
+        if (end_pos)
+            finish <= 1;
     end
 end
 
-logic screen;
+logic[1:0] screen;
 
 localparam SCREEN_START = 0;
 localparam SCREEN_GAME = 1;
+localparam SCREEN_END = 2;
+
 
 always_ff @(posedge pclk) begin
-    if (switch_screen == 0) 
+    if (gameEnd == 1) 
+        screen <= SCREEN_END;
+    else if (switch_screen == 0) 
         screen <= SCREEN_START;
     else
         screen <= SCREEN_GAME;
-    
 end
 
 always_ff @(posedge pclk) begin
-    if (screen == SCREEN_START) begin
+    if (screen == SCREEN_END) begin
+        if (win) begin
+            LCD_R <= 0;
+            LCD_G <= 0;
+            LCD_B <= 0;
+        end else begin
+            LCD_R <= 21;
+            LCD_G <= 0;
+            LCD_B <= 0;
+        end
+    end else if (screen == SCREEN_START) begin
         if (title_pixel) begin
             LCD_R <= 0;
             LCD_G <= 0;
             LCD_B <= 0;
-        end
-        else begin
+        end else begin
             LCD_R <= 21;
             LCD_G <= 0;
             LCD_B <= 0;
@@ -214,10 +237,14 @@ always_ff @(posedge pclk) begin
             LCD_R <= 0;
             LCD_G <= 0;
             LCD_B <= 0;
-        end else if (location) begin
+        end else if (finish) begin
             LCD_R <= 0;
             LCD_G <= 21;
             LCD_B <= 0;
+        end else if (location) begin
+            LCD_R <= 0;
+            LCD_G <= 0;
+            LCD_B <= 21;
         end else begin
             LCD_R <= 21;
             LCD_G <= 0;
@@ -280,8 +307,37 @@ always_comb begin
 
     )
         title_pixel = 1;
-
 end
 
+logic win;
+
+always_comb begin
+    win = 0;
+
+    if (
+        ((horizontal >= 160 && horizontal < 168) && (vertical >= 80  && vertical < 160)) ||
+        ((horizontal >= 192 && horizontal < 200) && (vertical >= 80  && vertical < 160)) ||
+        ((horizontal >= 168 && horizontal < 176) && (vertical >= 144 && vertical < 152)) ||
+        ((horizontal >= 184 && horizontal < 192) && (vertical >= 144 && vertical < 152)) ||
+        ((horizontal >= 176 && horizontal < 184) && (vertical >= 136 && vertical < 144))
+    )
+        win = 1;
+
+    if (
+        ((horizontal >= 220 && horizontal < 228) && (vertical >= 80  && vertical < 160)) ||
+        ((horizontal >= 208 && horizontal < 240) && (vertical >= 80  && vertical < 88 )) ||
+        ((horizontal >= 208 && horizontal < 240) && (vertical >= 152 && vertical < 160))
+    )
+        win = 1;
+
+    if (
+        ((horizontal >= 248 && horizontal < 256) && (vertical >= 80 && vertical < 160)) ||
+        ((horizontal >= 296 && horizontal < 304) && (vertical >= 80 && vertical < 160)) ||
+        ((horizontal >= 256 && horizontal < 296) &&
+         (vertical >= 80 + (horizontal - 238)) &&
+         (vertical < 88 + (horizontal - 238)))
+    )
+        win = 1;
+end
 
 endmodule
